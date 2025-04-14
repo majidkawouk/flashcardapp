@@ -2,7 +2,7 @@
 
 export default function Deck() {
   return (
-    <div className="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-rows-3w-full h-screen bg-gradient-to-br from-blue-100 to-blue-600">
+    <div className="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-rows-3 w-full min-h-screen bg-gradient-to-br from-blue-100 to-blue-600">
       {/* Container for stacking */}
       <div className="relative group w-56 h-72 ml-20 mt-14">
         {/* Orange background card */}
