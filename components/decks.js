@@ -10,10 +10,11 @@ export const decks = [
         to: "to-yellow-400",
         badge: "bg-yellow-500"
       },
-      cards:{
-        question:"what is var",
-        answer:"varible"
-      }
+      cards:[{
+        question:"what does var mean and how we use it",
+        answer:"varible"},
+      ]
+      
     },
     {
       id: 2,
