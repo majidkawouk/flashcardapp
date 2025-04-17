@@ -7,6 +7,14 @@ export default function ain() {
     e.preventDefault()
     router.push("/deck")
   }
+  const handleClick2 = (e) => {
+    e.preventDefault()
+    router.push("/createdeck")
+  }
+  const handleClick3 = (e) => {
+    e.preventDefault()
+    router.push("/customdeck")
+  }
   return (
     <div className="bg-gradient-to-r from-[#c9e0ff] to-[#d1d1f3] w-full min-h-screen flex flex-col items-center justify-start py-10 px-6 text-slate-800">
         <div className="absolute rotate-12 transform">
@@ -52,8 +60,13 @@ export default function ain() {
         <button onClick={(e)=>handleClick(e)} className="px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 ">
           Explore Decks
         </button>
-        <button className="px-6 py-3 bg-white text-black border border-black rounded-xl hover:bg-gray-400   ">
+        <button onClick={(e)=>handleClick2(e)} className="z-200 px-6 py-3 bg-white text-black border border-black rounded-xl hover:bg-gray-400   ">
           Create New Deck
+
+        </button>
+      
+        <button onClick={(e)=>handleClick3(e)} className="z-200 px-6 py-3 bg-white text-black border border-black rounded-xl hover:bg-gray-400   ">
+          View Costum Decks
 
         </button>
       
