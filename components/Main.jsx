@@ -57,7 +57,7 @@ export default function ain() {
       </div>
 
       <div className="mt-8 flex gap-6">
-        <button onClick={(e)=>handleClick(e)} className="px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 ">
+        <button onClick={(e)=>handleClick(e)} className="z-22 px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 ">
           Explore Decks
         </button>
         <button onClick={(e)=>handleClick2(e)} className="z-200 px-6 py-3 bg-white text-black border border-black rounded-xl hover:bg-gray-400   ">

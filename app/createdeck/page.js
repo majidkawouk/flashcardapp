@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Head></Head>
-        <Creatdeck></Creatdeck>
+      <Creatdeck></Creatdeck>
     </div>
   );
 }
