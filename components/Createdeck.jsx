@@ -62,10 +62,7 @@ export default function DecksPage() {
         <input value={deckname} onChange={(e) => setdeckname(e.target.value)} />
       </div>
 
-      <div>
-        <label>Color:</label>
-        <input value={color} onChange={(e) => setcolor(e.target.value)} />
-      </div>
+     
 
       <div>
         <label>Emoji:</label>
