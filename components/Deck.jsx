@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import FlipCard from "./FlipCard"; // Make sure FlipCard component is correctly implemented/imported
+import FlipCard from "../app/FlipCard"; // Make sure FlipCard component is correctly implemented/imported
 import { decks as staticDecks } from "./decks"; // Import the decks array
 
 export default function Cdeck() {
@@ -54,7 +54,9 @@ export default function Cdeck() {
           >
             Back to all decks
           </button>
-          <h2 className="text-3xl font-bold mb-4">{selectedDeck.title} Cards</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            {selectedDeck.title} Cards
+          </h2>
           <div className="flex flex-wrap gap-4">
             {selectedDeck.cards.map((card, index) => (
               <FlipCard

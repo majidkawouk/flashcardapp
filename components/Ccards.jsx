@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import FlipCard from "./FlipCard";
-
+import FlipCard from "../app/FlipCard";
 
 export default function Cards2({ params }) {
   const { deckname } = params;
@@ -12,7 +11,7 @@ export default function Cards2({ params }) {
     const stored = localStorage.getItem("allDecks");
     if (stored) {
       const decks = JSON.parse(stored);
-      const match = decks.find(d => d.deckn === decodeURIComponent(deckname));
+      const match = decks.find((d) => d.deckn === decodeURIComponent(deckname));
       if (match) {
         const formatted = {
           emoji: match.emojin,

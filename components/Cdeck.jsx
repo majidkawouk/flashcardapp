@@ -1,20 +1,20 @@
 "use client";
 import { useEffect, useState } from "react";
-import FlipCard from "./FlipCard"; // Make sure FlipCard component is imported
+import FlipCard from "../app/FlipCard"; // Make sure FlipCard component is imported
 
 export default function Cdeck() {
   const [parsedDecks, setParsedDecks] = useState([]);
   const [selectedDeck, setSelectedDeck] = useState(null); // Track selected deck
 
   const colorOptions = [
-    { bg: 'bg-blue-400', from: 'from-blue-400', to: 'to-blue-600' },
-    { bg: 'bg-green-400', from: 'from-green-400', to: 'to-green-600' },
-    { bg: 'bg-yellow-400', from: 'from-yellow-400', to: 'to-yellow-600' },
-    { bg: 'bg-red-400', from: 'from-red-400', to: 'to-red-600' },
-    { bg: 'bg-purple-400', from: 'from-purple-400', to: 'to-purple-600' },
-    { bg: 'bg-pink-400', from: 'from-pink-400', to: 'to-pink-600' },
-    { bg: 'bg-indigo-400', from: 'from-indigo-400', to: 'to-indigo-600' },
-    { bg: 'bg-teal-400', from: 'from-teal-400', to: 'to-teal-600' },
+    { bg: "bg-blue-400", from: "from-blue-400", to: "to-blue-600" },
+    { bg: "bg-green-400", from: "from-green-400", to: "to-green-600" },
+    { bg: "bg-yellow-400", from: "from-yellow-400", to: "to-yellow-600" },
+    { bg: "bg-red-400", from: "from-red-400", to: "to-red-600" },
+    { bg: "bg-purple-400", from: "from-purple-400", to: "to-purple-600" },
+    { bg: "bg-pink-400", from: "from-pink-400", to: "to-pink-600" },
+    { bg: "bg-indigo-400", from: "from-indigo-400", to: "to-indigo-600" },
+    { bg: "bg-teal-400", from: "from-teal-400", to: "to-teal-600" },
   ];
 
   useEffect(() => {
@@ -23,7 +23,8 @@ export default function Cdeck() {
       try {
         const decks = JSON.parse(stored);
         const formatted = decks.map((deck, index) => {
-          const randomColor = colorOptions[Math.floor(Math.random() * colorOptions.length)];
+          const randomColor =
+            colorOptions[Math.floor(Math.random() * colorOptions.length)];
           return {
             id: index,
             emoji: deck.emojin || "📚",
@@ -91,7 +92,9 @@ export default function Cdeck() {
           >
             Back to all decks
           </button>
-          <h2 className="text-3xl font-bold mb-4">{selectedDeck.title} Cards</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            {selectedDeck.title} Cards
+          </h2>
           <div className="flex flex-wrap gap-4">
             {selectedDeck.questions.map((question, index) => (
               <FlipCard
