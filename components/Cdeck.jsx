@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import FlipCard from "../app/FlipCard"; // Make sure FlipCard component is imported
+import FlipCard from "@/app/FlipCard"; // Make sure FlipCard component is imported
 
 export default function Cdeck() {
   const [parsedDecks, setParsedDecks] = useState([]);

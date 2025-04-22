@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import FlipCard from "../app/FlipCard"; // Make sure FlipCard component is correctly implemented/imported
+import FlipCard from "@/app/FlipCard" // Make sure FlipCard component is correctly implemented/imported
 import { decks as staticDecks } from "./decks"; // Import the decks array
 
 export default function Cdeck() {

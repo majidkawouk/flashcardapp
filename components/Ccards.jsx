@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import FlipCard from "../../FlipCard";
+import FlipCard from '@/app/FlipCard';
+
 
 export default function Cards2({ params }) {
   const { deckname } = params;
